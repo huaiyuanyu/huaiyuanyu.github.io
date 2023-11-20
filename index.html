@@ -1,1 +1,28 @@
-<p>Hello World</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Test</title>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.cycle.all.latest.js"></script>
+
+    <script type = "text/javascript">
+        $(document).ready(function() {
+            $('.rotator').cycle({
+                fx: 'fade',
+                timeout: 2000
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="rotator">
+        <img src="/images/1.jpg" alt="1" />
+        <img src="/images/2.jpg" alt="2" />
+        <img src="/images/3.jpg" alt="3" />
+        <img src="/images/4.jpg" alt="4" />
+        <img src="/images/5.jpg" alt="5" />
+    </div>
+</body>
+</html>
